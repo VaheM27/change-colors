@@ -7,12 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ColorsComponent {
   colors = ['green', 'yellow', 'red', 'pink'];
-  
+
   changeColor() {
     this.colors.unshift(...this.colors.splice(this.colors.length - 1, 1));
   }
+  items: Array<string>;
 
-  constructor() {}
+  addItem(newItem: string) {
+    this.items.push(newItem);
+  }
+
+  constructor() {
+    this.items = [];
+  }
 
   ngOnInit() {}
 }

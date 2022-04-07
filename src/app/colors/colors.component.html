@@ -1,6 +1,11 @@
 <section class="container">
   <div *ngFor="let color of colors">
-    <app-color-card [colors]="color"> </app-color-card>
+    <app-color-card (newItemEvent)="addItem($event)" [colors]="color"> </app-color-card>
   </div>
   <button (click)="changeColor()" id="btn">Click Me</button>
+  <app-color-card (newItemEvent)="addItem($event)">
+  </app-color-card>
+  <ul>
+    <li *ngFor="let item of items">{{ item }}</li>
+  </ul>
 </section>
