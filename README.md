@@ -1,5 +1,10 @@
 # ChangeColors
 
+Short preview of `ChangeColors` project.
+
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/60319108/162195541-d69053f8-d4ea-47e3-b5c0-676f8349e53d.gif)
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.1.
 
 ## Development server
